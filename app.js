@@ -16,10 +16,11 @@ mongoose.connect(CONNECTION_STRING);
 const app = express();
 
 app.use(
-    cors({
-        credentials: true,
-        origin: "http://localhost:3000",
-    })
+  cors({
+    credentials: true,
+    // origin: "http://localhost:3000",
+    origin: "https://kz--capable-truffle-066ad3.netlify.app/"
+  })
 );
 
 app.use(
